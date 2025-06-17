@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    background: #f8aaaa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 90px;
+    float: left;
+   margin: 5px;
+}
+
+.hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    transition: background-image 1s ease-in-out;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  .product h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+  }
+
+  .product p {
+    color: #777;
+    font-size: 0.95em;
+  }
+
+  .product button {
+    background: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .cart {
+    background: #fff3e0;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cart-item span {
+    flex: 1;
+    font-size: 0.95em;
+  }
+
+  .cart-item button {
+    margin: 0 3px;
+    background: #d2691e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button.wa-btn {
+    margin-top: 20px;
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  @media (max-width: 500px) {
+    .hero {
+      font-size: 1.4em;
+      padding: 10px;
+    }
+  }
+

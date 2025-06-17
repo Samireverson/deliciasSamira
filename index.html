@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Delicias da Samira ®</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <img src="/src/img/logoDS.jpeg" class="logo" alt="">
+    <header>
+        <h1>Delícias da Samira</h1>
+        <p>peça a sua doçura!</p>
+    </header>
+
+    <div class="hero" id="hero">
+        Bem vindo(a) à nossa loja!
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Catálogo de bolos</h2>
+        <div class="product-list" id="product-list"></div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrinho</h2>
+        <div id="cart-items"></div>
+        <p><strong>Total:</strong> R$ <span id="cart-total">0.00</span></p>
+    </div>
+
+    <button class="wa-btn" onclick="gerarImagemPedido()">Gerar Cardápio e Enviar pedido pelo Whatsapp</button>
+
+    <div id="pedido-visual" style="display: none; background: white; padding: 20px; width: 400px; border: 1px solid #ccc; border-radius: 10px; box-shadow: #f8aaa0 0 2px 10px 0;">
+        <h3>Pedido - DELÍCIAS DA SAMIRA</h3>
+        <ul id="pedido-itens" style="list-style: none; padding: 0;"></ul>
+        <p><strong>Total:</strong> R$ <span id="pedido-total"></span></p>
+    </div>
+    <a id="linkWhatsapp" target="_blank" style="display: none;"></a>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
