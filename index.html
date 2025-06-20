@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/x-icon" href="./src/img/logoDS.jpeg">
     <title>Delicias da Samira ®</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
@@ -30,16 +31,25 @@
         <p><strong>Total:</strong> R$ <span id="cart-total">0.00</span></p>
     </div>
 
-    <button class="wa-btn" onclick="gerarImagemPedido()">Gerar Cardápio e Enviar pedido pelo Whatsapp</button>
+    <button class="wa-btn" onclick="gerarImagemPedido()">Gerar Cardápio e Enviar pedido pelo Whatsapp<img src="./src/img/whatsapp.png" style="width: 30px; border-radius: 50%;"></button>
 
     <div id="pedido-visual" style="display: none; background: white; padding: 20px; width: 400px; border: 1px solid #ccc; border-radius: 10px; box-shadow: #f8aaa0 0 2px 10px 0;">
         <h3>Pedido - DELÍCIAS DA SAMIRA</h3>
         <ul id="pedido-itens" style="list-style: none; padding: 0;"></ul>
         <p><strong>Total:</strong> R$ <span id="pedido-total"></span></p>
     </div>
+    
     <a id="linkWhatsapp" target="_blank" style="display: none;"></a>
+    
 
 
     <script src="index.js"></script>
+    <footer>
+    <div >
+        <a href="https://www.instagram.com/delicia_samira2025/" target="_blank"><img class="icons" src="./src/img/instagram.png" alt=""></a>
+    </div>
+    <p><b>Imperius Dev © 2025 - Todos os direitos reservados</b></p>
+
+</footer>
 </body>
 </html>

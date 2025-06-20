@@ -1,7 +1,7 @@
 const imagensHero = [
-    "https://i.ytimg.com/vi/7An9JHj0vjs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAjmiKdn9Zv9jbdlg2xIxUuNlTS0Q",
-    "https://static.itdg.com.br/images/360-240/bfbc5532e36840b2a57e3849d82ad7a5/355179-original.jpg",
-    "https://s2-receitas.glbimg.com/WboucaZS-qJaGhVAq4jPxkbLBRs=/0x0:610x300/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2014/03/02/19_01_23_280_1186675_762414030440062_1609516344_n_610x300.jpg"
+    "./src/img/vulcao.png",
+    "https://receitatodahora.com.br/wp-content/uploads/2023/02/bolo-no-pote-11-02.jpg.webp",
+    "./src/img/tortaSalg.png"
   ];
 
   let indexImg = 0;
@@ -108,7 +108,7 @@ const imagensHero = [
       link.click();
 
       const mensagem = encodeURIComponent("Olá! Segue meu pedido em anexo 😊");
-      const numero = "5521971523039"; // Substitua aqui pelo seu número com DDD e DDI
+      const numero = "5521976685573"; // Substitua aqui pelo seu número com DDD e DDI
       const waLink = `https://wa.me/${numero}?text=${mensagem}`;
       document.getElementById("linkWhatsapp").href = waLink;
       document.getElementById("linkWhatsapp").click();
